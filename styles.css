@@ -34,22 +34,24 @@
     padding-top: 25px;
     padding-left: 50px;
     padding-right: 50px;
-    width: fit-content;
-    max-width: min-content;
+    width: min-content;
+    /* width: fit-content;
+    max-width: min-content; */
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(187, 157, 75);
-
 }
 
 #zhongli-image{
     display: block;
-    height:40%;
+    height: auto;
+    max-height:40%;
     width: auto;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 #image-caption{
     text-align: center;
@@ -116,4 +118,16 @@ hr {
     font-family: "Tangerine", cursive;
     font-weight: 700;
     font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    #zhongli-image {
+      height: auto;  /* Allow height to scale proportionally */
+      width: 100%;    /* Ensure image fills container width */
+    }
+    #image-bg {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: auto;
+    }
 }
