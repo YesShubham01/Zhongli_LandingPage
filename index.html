@@ -7,8 +7,9 @@
     <!-- Webpage title here -->
     <title>Geo Archon</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
-</style>
+        @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+    </style>
     <!-- link css file -->
     <link rel="stylesheet" href="styles.css">
     
@@ -18,25 +19,26 @@
 <body>
     
     <!-- main content of the body -->
-    <main id="webpage">
+    <main>
+        <div id = "webpage">
 
         <!-- header of the page -->
         <header>
-            <h1>Geo Archon: Zhongli</h1>
-            <h2>God of Contracts</h2>
+            <p id="title">Geo Archon: Zhongli</p>
+            <h2 id="subtitle">~The God of Contracts</h2>
         </header>
 
         <!-- image section -->
-        <div>
+        <div id="image-bg">
             <!-- image tag -->
-            <img src="https://images2.minutemediacdn.com/image/fetch/w_850,h_560,c_fill,g_auto,f_auto/https%3A%2F%2Fapptrigger.com%2Ffiles%2F2022%2F01%2Fmaxresdefault-4-850x560.jpg" alt="Zhongli image">
+            <img id="zhongli-image" src="https://images2.minutemediacdn.com/image/fetch/w_850,h_560,c_fill,g_auto,f_auto/https%3A%2F%2Fapptrigger.com%2Ffiles%2F2022%2F01%2Fmaxresdefault-4-850x560.jpg" alt="Zhongli image">
         
             <!-- text -->
-            <h2>"Osmanthus wine tastes the same as I remember... But where are those who share the memory?"</h2>
+            <h2 id="image-caption">"Osmanthus wine tastes the same as I remember... But where are those who share the memory?"</h2>
         </div>
 
         <!-- List of voiceline information -->
-        <div>
+        <section class="voiceline-data">
             <!-- h1 text -->
             <h1>Here are some voicelines of our beloved Morax:</h1>
 
@@ -73,10 +75,13 @@
             <hr>
 
             <!-- footer -->
-            <footer>
+            <footer class="footer">
                 <!-- h2 text -->
                 <h2>To know more about our Favourite Archon: <a href="https://genshin-impact.fandom.com/wiki/Zhongli" target="_blank">Click Here</a></h2>
             </footer>
+
+            <h3 id="watermark">Developer: Shubham Puhal <a href="https://github.com/YesShubham01" target="_blank">Github Link</a></h3>
+        </section>
         </div>
     </main>
 
